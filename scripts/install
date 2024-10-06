@@ -50,7 +50,7 @@ popd
 pushd $install_dir
     ynh_hide_warnings corepack enable && corepack prepare pnpm@latest --activate
     ynh_hide_warnings pnpm i    
-    ynh_hide_warnings pnpm run build
+    ynh_hide_warnings pnpm run build --legacy-peer-deps
 popd
 
 #=================================================
