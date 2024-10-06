@@ -44,8 +44,8 @@ ynh_script_progression "Installing the app..."
 
 pushd $install_dir
     ynh_hide_warnings corepack enable && corepack prepare pnpm@latest --activate
-    ynh_hide_warnings pnpm i --unsafe-perm
-    ynh_hide_warnings pnpm run build --legacy-peer-deps
+    ynh_hide_warnings pnpm i
+    ynh_hide_warnings pnpm nx run server:start
 popd
 
 #=================================================
