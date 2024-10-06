@@ -36,8 +36,11 @@ ynh_config_add --template=".env" --destination="$install_dir/.env"
 #=================================================
 ynh_script_progression "Installing $app..."
 
-pushd "$install_dir"
- 	ynh_hide_warnings ynh_exec_as_app npm install
+pushd $install_dir
+    ynh_hide_warnings corepack enable && corepack prepare pnpm@latest --activate
+    ynh_hide_warnings pnpm nx run @docmost/editor-ext:build
+    ynh_hide_warnings pnpm install --frozen-lockfile --prod
+    ynh_hide_warnings pnpm build
 popd
 
 #=================================================
