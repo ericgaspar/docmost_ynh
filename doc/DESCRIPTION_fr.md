@@ -1,1 +1,11 @@
-Conçu pour documenter et créer des récits à partir d'activités pratiques, do•doc (prononcer doudoc) est un outil composite, libre et modulaire, qui permet de capturer des médias (photos, vidéos, sons et stop-motion), de les éditer, de les mettre en page et de les publier. Son aspect composite permet de le reconfigurer de manière à ce qu'il soit le plus adapté possible à la situation dans laquelle il est déployé.
+### Features
+
+- Real-time collaboration
+- Diagrams (Draw.io, Excalidraw and Mermaid)
+- Spaces
+- Permissions management
+- Groups
+- Comments
+- Page history
+- Search
+- File attachment

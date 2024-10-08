@@ -14,7 +14,6 @@ maintainers = ["eric_G"]
 [upstream]
 license = "AGPL-3.0-only"
 website = "https://docmost.com/"
-demo = "https://test.dodoc.fr/"
 admindoc = "https://docmost.com/docs/"
 code = "https://github.com/docmost/docmost"
 
